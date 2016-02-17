@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sessionState>
+    <networkFrames>
+        <networkFrame y="0" x="0" networkViewID="712"/>
+    </networkFrames>
+    <cytopanels>
+        <cytopanel id="CytoPanel1">
+            <panelState>DOCK</panelState>
+            <selectedPanel>1</selectedPanel>
+        </cytopanel>
+        <cytopanel id="CytoPanel2">
+            <panelState>HIDE</panelState>
+            <selectedPanel>0</selectedPanel>
+        </cytopanel>
+        <cytopanel id="CytoPanel3">
+            <panelState>HIDE</panelState>
+            <selectedPanel>0</selectedPanel>
+        </cytopanel>
+    </cytopanels>
+</sessionState>

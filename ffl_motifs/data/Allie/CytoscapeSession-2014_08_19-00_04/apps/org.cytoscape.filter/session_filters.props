@@ -1,0 +1,15 @@
+FilterVersion=0.2
+<Composite>
+name=Default
+<AdvancedSetting>
+scope.global=true
+scope.session=true
+selection.node=true
+selection.edge=false
+edge.source=true
+edge.target=true
+Relation=AND
+</AdvancedSetting>
+Negation=false
+StringFilter=InCluster:false:-:0
+</Composite>

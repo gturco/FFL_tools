@@ -52,7 +52,7 @@ ggplot(data=x, aes(x=position, y=gene, colour=Element, group=gene)) +  geom_poin
 file_name = "/Users/gturco/Documents/Data/FFL/myb83_qpcr_neg.csv"
 x = read.csv(file_name, header=TRUE)
 x$Expression <- factor(x$Expression, levels = c("Low","Med","","High"))
-x$Name <- factor(x$Name, levels = c("MYB83","CESA8","LAC11","IRX15-L"))
+x$Name <- factor(x$Name, levels = c("MYB83","LAC11","CESA8","IRX15-L"))
 ggplot(data=x, aes(x=Expression, y=avg_CT, fill=Name)) +  geom_bar(position="dodge",stat="identity")  + theme_classic() +  xlab(NULL) + ylab("Fold Change") + scale_fill_manual(values= c("Black","Blue","#003333","red"))
 ggplot(data=x[4:12,], aes(x=Name, y=avg_CT, fill=Expression)) +  geom_bar(position="dodge",stat="identity")  + theme_classic() +  xlab(NULL) + ylab("Fold Change") + scale_fill_manual(values= c("#b9d2e2","#6aacd4","#1d66a3"))
 ggsave("/Users/gturco/Documents/Data/FFL/myb83_targets_bar.pdf", width=5.60, height=3.2, dpi=600, units="cm")  
@@ -62,7 +62,7 @@ ggsave("/Users/gturco/Documents/Data/FFL/myb83_all_bar.pdf", width=5.60, height=
 file_name = "/Users/gturco/Documents/Data/FFL/vnd7_qpcr.csv"
 x = read.csv(file_name, header=TRUE)
 x$Expression <- factor(x$Expression, levels = c("Low","Med","","High"))
-x$Name <- factor(x$Name, levels = c("VND7","CESA8","IRX15-L","LAC11","MYB46","MYB83"))
+x$Name <- factor(x$Name, levels = c("VND7","LAC11","CESA8","IRX15-L","MYB46","MYB83"))
 ggplot(data=x, aes(x=Expression, y=avg_CT, fill=Name)) +  geom_bar(position="dodge",stat="identity")  + theme_classic() +  xlab(NULL) + ylab("Fold Change") + scale_fill_manual(values= c("Black","Blue","#003333","#663300","red","#0066CC"))
 ggplot(data=x[4:18,], aes(x=Name, y=avg_CT, fill=Expression)) +  geom_bar(position="dodge",stat="identity")  + theme_classic() +  xlab(NULL) + ylab("Fold Change") + scale_fill_manual(values= c("#b9d2e2","#6aacd4","#1d66a3"))
 ggsave("/Users/gturco/Documents/Data/FFL/vnd7_targets_bar.pdf", width=5.60, height=3.2, dpi=600, units="cm")

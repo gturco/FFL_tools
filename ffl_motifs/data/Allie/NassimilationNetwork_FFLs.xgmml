@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<graph id="712" label="712" cy:view="1" cy:networkId="62" cy:visualStyle="default" cy:documentVersion="3.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cy="http://www.cytoscape.org" xmlns="http://www.cs.rpi.edu/XGMML">
+  <graphics>
+    <att name="NETWORK_EDGE_SELECTION" value="true" type="string"/>
+    <att name="NETWORK_CENTER_Z_LOCATION" value="0.0" type="string"/>
+    <att name="NETWORK_DEPTH" value="0.0" type="string"/>
+    <att name="NETWORK_NODE_SELECTION" value="true" type="string"/>
+    <att name="NETWORK_HEIGHT" value="704.0" type="string"/>
+    <att name="NETWORK_CENTER_Y_LOCATION" value="1778.8261413574219" type="string"/>
+    <att name="NETWORK_WIDTH" value="951.0" type="string"/>
+    <att name="NETWORK_TITLE" value="" type="string"/>
+    <att name="NETWORK_CENTER_X_LOCATION" value="2478.4295043945312" type="string"/>
+    <att name="NETWORK_SCALE_FACTOR" value="0.401318259194668" type="string"/>
+  </graphics>
+	<node cy:nodeid="161" id="822" label="AT5G66320">
+		<graphics x="2922.99236112233" y="1876.897705078125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="196" id="787" label="AT4G36900">
+		<graphics x="2384.95458984375" y="2346.401123046875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="78" id="905" label="AT2G47890">
+		<graphics x="2405.113037109375" y="2207.8560921854396" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="217" id="766" label="AT3G19290">
+		<graphics x="2385.2515869140625" y="1049.5723876953125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="159" id="824" label="AT5G16770">
+		<graphics x="3435.838308387955" y="2262.301513671875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="189" id="1536" label="AT1G30490">
+		<graphics x="2114.0361328125" y="2307.006238669815" z="0.0"
+	</node>
+	<node cy:nodeid="175" id="808" label="GLN2">
+		<graphics x="2830.789968544205" y="2610.893310546875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		<att name="lockedVisualProperties" type="list">/>
+		<att name="NODE_LABEL_FONT_SIZE" type="string" value="35"/>
+		</att>/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="210" id="773" label="AT2G22840">
+		<graphics x="2902.4189453125" y="997.5670166015625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="168" id="815" label="GLT1">
+		<graphics x="3461.893484169205" y="2610.893310546875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		<att name="lockedVisualProperties" type="list">/>
+		<att name="NODE_LABEL_FONT_SIZE" type="string" value="35"/>
+		</att>/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="267" id="716" label="AT3G15210">
+		<graphics x="2572.555908203125" y="1049.5723876953125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="182" id="801" label="AT2G21230">
+		<graphics x="2973.481863075455" y="2262.66357421875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="107" id="1537" label="AT1G48000">
+		<graphics x="2287.33642578125" y="2268.166748046875" z="0.0"
+	</node>
+	<node cy:nodeid="79" id="904" label="AT1G78080">
+		<graphics x="2433.593017578125" y="2243.3814828104396" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="240" id="743" label="AT3G28920">
+		<graphics x="2611.329345703125" y="936.75927734375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="72" id="911" label="AT2G04880">
+		<graphics x="2354.7129167927546" y="2189.025634765625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="238" id="745" label="AT2G31230">
+		<graphics x="2267.691650390625" y="997.5670166015625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="249" id="734" label="AT2G23290">
+		<graphics x="2927.97509765625" y="936.7589721679688" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="243" id="740" label="AT2G44730">
+		<graphics x="2769.65234375" y="936.75927734375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="268" id="715" label="NIA1">
+		<graphics x="1475.1185818254548" y="2603.642333984375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		<att name="lockedVisualProperties" type="list">/>
+		<att name="NODE_LABEL_FONT_SIZE" type="string" value="35"/>
+		</att>/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="231" id="752" label="AT3G25730">
+		<graphics x="2811.74365234375" y="997.5670166015625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="86" id="897" label="AT1G03840">
+		<graphics x="2140.408203125" y="1203.6077365339202" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="93" id="890" label="AT2G35530">
+		<graphics x="1869.5264892578125" y="1204.1465548932952" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="224" id="759" label="NLP6">
+		<graphics x="2403.919363075455" y="1765.5198974609375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		<att name="lockedVisualProperties" type="list">/>
+		<att name="NODE_LABEL_FONT_SIZE" type="string" value="35"/>
+		</att>/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="204" id="779" label="AT1G21910">
+		<graphics x="2177.0162353515625" y="997.5670166015625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="264" id="719" label="AT5G52020">
+		<graphics x="2291.599609375" y="1049.5723876953125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="257" id="726" label="AT1G04880">
+		<graphics x="2532.16796875" y="936.75927734375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="216" id="767" label="AT2G40950">
+		<graphics x="2658.021484375" y="1594.2971896589202" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="202" id="781" label="AT1G14580">
+		<graphics x="2197.742431640625" y="1240.2487277448577" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="250" id="733" label="AT5G12870">
+		<graphics x="1474.2482204973298" y="2532.8359375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="162" id="821" label="AT5G25830">
+		<graphics x="3514.269460731705" y="2325.278564453125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="176" id="807" label="AT1G76510">
+		<graphics x="2435.35107421875" y="1132.958740234375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="190" id="793" label="AT4G37790">
+		<graphics x="2165.8321271525574" y="2213.30419921875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="265" id="718" label="AT5G05410">
+		<graphics x="2136.361083984375" y="936.75927734375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="94" id="889" label="AT5G62610">
+		<graphics x="1897.50927734375" y="1164.9622802734375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="80" id="903" label="AT4G16750">
+		<graphics x="2354.946044921875" y="2125.3190394613657" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="230" id="753" label="AT1G72360">
+		<graphics x="2022.4493408203125" y="2228.93931797081" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="203" id="780" label="AT5G60850">
+		<graphics x="1941.7685546875" y="1205.9795627057952" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="251" id="732" label="AT1G61730">
+		<graphics x="2690.49072265625" y="936.75927734375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="201" id="782" label="ANAC032">
+		<graphics x="2068.304616981705" y="1601.6219482421875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		<att name="lockedVisualProperties" type="list">/>
+		<att name="NODE_LABEL_FONT_SIZE" type="string" value="35"/>
+		</att>/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="229" id="754" label="AT1G68920">
+		<graphics x="2594.69206815358" y="2199.235595703125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="163" id="820" label="AT3G24050">
+		<graphics x="3447.871511512955" y="2219.19921875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="174" id="809" label="AT3G60530">
+		<graphics x="3166.94304471608" y="2350.53076171875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="256" id="727" label="AT4G29080">
+		<graphics x="1857.069091796875" y="2301.704345703125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="85" id="898" label="AT2G22900">
+		<graphics x="1964.0213623046875" y="1163.3350830078125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="81" id="902" label="AT3G60490">
+		<graphics x="2293.9527195374308" y="2102.2307957093058" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="245" id="738" label="AT1G54060">
+		<graphics x="2626.78093534108" y="1863.8231201171875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="236" id="747" label="AT2G46310">
+		<graphics x="2816.559499794205" y="1848.2291259765625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="74" id="909" label="AT5G60890">
+		<graphics x="2401.021240234375" y="2153.7307390583796" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="242" id="741" label="AT5G39760">
+		<graphics x="1978.037353515625" y="936.75927734375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="211" id="772" label="AT1G24625">
+		<graphics x="2481.19482421875" y="1424.6846408307952" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="208" id="775" label="AT1G17520">
+		<graphics x="2403.122314453125" y="1454.6669406354827" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="184" id="799" label="AT5G51190">
+		<graphics x="3045.166921669205" y="2191.518798828125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="252" id="731" label="AT1G47870">
+		<graphics x="2478.90380859375" y="1049.5723876953125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="181" id="802" label="AT2G36400">
+		<graphics x="3194.87224393483" y="2317.09521484375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="183" id="800" label="AT5G47230">
+		<graphics x="3128.21306424733" y="2324.615478515625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="218" id="765" label="AT5G54680">
+		<graphics x="2358.366943359375" y="997.5670166015625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="164" id="819" label="AT2G41070">
+		<graphics x="3388.739187294205" y="2231.60400390625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="228" id="755" label="AT4G36730">
+		<graphics x="2630.3929443359375" y="997.5670166015625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="209" id="774" label="AT4G37740">
+		<graphics x="2645.493408203125" y="1524.9824923932952" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="84" id="899" label="CNX2">
+		<graphics x="2287.1435546875" y="2610.893310546875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		<att name="lockedVisualProperties" type="list">/>
+		<att name="NODE_LABEL_FONT_SIZE" type="string" value="40"/>
+		</att>/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="191" id="792" label="AT1G68840">
+		<graphics x="2215.6392953104396" y="2204.9613996134954" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="262" id="721" label="AT5G61590">
+		<graphics x="2197.947509765625" y="1049.5723876953125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="237" id="746" label="NIA2">
+		<graphics x="1563.6185818254548" y="2603.642333984375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		<att name="lockedVisualProperties" type="list">/>
+		<att name="NODE_LABEL_FONT_SIZE" type="string" value="35"/>
+		</att>/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="244" id="739" label="AT1G76880">
+		<graphics x="1738.2918701171875" y="2347.529541015625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="73" id="910" label="AT3G06490">
+		<graphics x="2259.541748046875" y="2233.6944710916896" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="82" id="901" label="AT5G67190">
+		<graphics x="2204.5322265625" y="2152.4947378926854" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="173" id="810" label="AT1G26610">
+		<graphics x="2835.14665799733" y="2326.429443359375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="255" id="728" label="AT1G51600">
+		<graphics x="1820.3038330078125" y="2266.474853515625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="219" id="764" label="AT5G44210">
+		<graphics x="2699.79736328125" y="1550.8302707136077" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="253" id="730" label="AT3G53340">
+		<graphics x="1792.7760009765625" y="2318.96923828125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="83" id="900" label="AT3G50260">
+		<graphics x="2260.44704765213" y="2172.957275390625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="254" id="729" label="AT1G68360">
+		<graphics x="2453.00634765625" y="936.75927734375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="192" id="791" label="UPM1">
+		<graphics x="2172.966028503658" y="2610.893310546875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		<att name="lockedVisualProperties" type="list">/>
+		<att name="NODE_LABEL_FONT_SIZE" type="string" value="40"/>
+		</att>/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="165" id="818" label="AT1G22810">
+		<graphics x="3477.180105262955" y="2292.098388671875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="220" id="763" label="AT2G38340">
+		<graphics x="2344.000732421875" y="1433.7414035261077" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="263" id="720" label="AT1G71130">
+		<graphics x="2373.8450927734375" y="936.7589721679688" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="151" id="1538" label="AT1G20910">
+		<graphics x="2209.05029296875" y="2263.469970703125" z="0.0"
+	</node>
+	<node cy:nodeid="172" id="811" label="AT2G26940">
+		<graphics x="2854.844167762955" y="2281.009765625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="186" id="797" label="AT2G20880">
+		<graphics x="2572.09734159108" y="2239.890625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="213" id="770" label="AT1G68130">
+		<graphics x="2465.623779296875" y="1476.9125461042327" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="179" id="804" label="AT1G14350">
+		<graphics x="3031.689870887955" y="2280.3173828125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="200" id="783" label="AT5G54930">
+		<graphics x="1918.2099609375" y="1248.4994601667327" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="75" id="908" label="AT4G35550">
+		<graphics x="2296.390380859375" y="2146.3399789041896" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="207" id="776" label="AT5G63790">
+		<graphics x="2721.068359375" y="997.5670166015625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="171" id="812" label="AT5G23090">
+		<graphics x="2785.360281044205" y="2301.3232421875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="234" id="749" label="AT4G39070">
+		<graphics x="1560.1318874895173" y="2496.338134765625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="227" id="756" label="AT4G01120">
+		<graphics x="2759.860107421875" y="1049.5723876953125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="143" id="1535" label="AT3G07650">
+		<graphics x="2239.374267578125" y="2313.518798828125" z="0.0"
+	</node>
+	<node cy:nodeid="180" id="803" label="AT1G20700">
+		<graphics x="2595.916921669205" y="2291.00732421875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="185" id="798" label="AT5G61600">
+		<graphics x="3046.389577919205" y="2242.58642578125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="221" id="762" label="AT1G12630">
+		<graphics x="2853.51220703125" y="1049.5723876953125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="246" id="737" label="AT2G45680">
+		<graphics x="1413.2965603410798" y="2521.179931640625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="199" id="784" label="AT4G32800">
+		<graphics x="2376.445556640625" y="2298.777587890625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="212" id="771" label="AT5G44160">
+		<graphics x="2231.736083984375" y="1179.2886447370452" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="226" id="757" label="AT3G04070">
+		<graphics x="1964.4967258850868" y="2249.7506800863657" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="239" id="744" label="AT1G16530">
+		<graphics x="2848.813720703125" y="936.75927734375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="261" id="722" label="AT1G50640">
+		<graphics x="2086.3408203125" y="997.567138671875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="90" id="893" label="AT4G31550">
+		<graphics x="2341.2705078125" y="2300.7138671875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="166" id="817" label="AT4G17490">
+		<graphics x="3404.564870887955" y="2304.065673828125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="205" id="778" label="AT2G02540">
+		<graphics x="2539.717529296875" y="997.5670166015625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="76" id="907" label="AT3G19580">
+		<graphics x="2310.4151218811803" y="2204.783582419815" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="115" id="1534" label="AT1G69310">
+		<graphics x="2139.4615478515625" y="2270.7919921875" z="0.0"
+	</node>
+	<node cy:nodeid="177" id="806" label="AT4G01250">
+		<graphics x="3000.016531044205" y="2219.397705078125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="235" id="748" label="AT1G73870">
+		<graphics x="1598.6398220598298" y="2511.221923828125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="170" id="813" label="AT4G18880">
+		<graphics x="2778.61150174733" y="2345.5224609375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="260" id="723" label="AT5G13330">
+		<graphics x="2449.042236328125" y="997.5670166015625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="157" id="826" label="AT5G51990">
+		<graphics x="2365.03955078125" y="2237.662109375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="160" id="823" label="AT1G79180">
+		<graphics x="3493.150320106705" y="2246.818115234375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="222" id="761" label="AT3G54390">
+		<graphics x="2628.078542762955" y="2253.2265625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="232" id="751" label="NIR1">
+		<graphics x="2064.508753113033" y="2613.393310546875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		<att name="lockedVisualProperties" type="list">/>
+		<att name="NODE_LABEL_FONT_SIZE" type="string" value="40"/>
+		<att name="NODE_SIZE" type="string" value="50.0"/>
+		</att>/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="247" id="736" label="AT1G35560">
+		<graphics x="1808.4647216796875" y="2370.573974609375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="215" id="768" label="AT5G06960">
+		<graphics x="2666.2080078125" y="1049.5723876953125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="167" id="816" label="AT1G53170">
+		<graphics x="3543.562429481705" y="2280.23828125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="225" id="758" label="AT1G76350">
+		<graphics x="2173.0421142578125" y="2326.4951171875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="214" id="769" label="AT5G65210">
+		<graphics x="2339.00830078125" y="1484.7644748151702" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="266" id="717" label="AT1G12610">
+		<graphics x="1995.6651611328125" y="997.5670166015625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="77" id="906" label="AT4G32890">
+		<graphics x="2317.5182015604396" y="2340.114990234375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="248" id="735" label="AT4G37260">
+		<graphics x="2215.5224609375" y="936.7589721679688" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="259" id="724" label="AT3G61830">
+		<graphics x="2104.2952880859375" y="1049.5723876953125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="269" id="714" label="AT5G10510">
+		<graphics x="1444.5157986223298" y="2472.367919921875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="188" id="795" label="GLN1;2">
+		<graphics x="2944.409597450455" y="2610.893310546875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		<att name="lockedVisualProperties" type="list">/>
+		<att name="NODE_LABEL_FONT_SIZE" type="string" value="35"/>
+		</att>/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="169" id="814" label="AT3G42790">
+		<graphics x="3451.246999794205" y="2338.061767578125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="233" id="750" label="AT3G55730">
+		<graphics x="1546.9220486223298" y="2536.83984375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="178" id="805" label="AT1G12260">
+		<graphics x="3146.55730252858" y="2294.770263671875" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="187" id="796" label="AT5G47220">
+		<graphics x="3190.75163846608" y="2276.486328125" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="241" id="742" label="AT5G15210">
+		<graphics x="2057.1993408203125" y="936.75927734375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="258" id="725" label="AT4G23980">
+		<graphics x="2294.683837890625" y="936.75927734375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="87" id="896" label="AT5G44080">
+		<graphics x="1821.8319091796875" y="1162.0367431640625" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="206" id="777" label="AT3G14180">
+		<graphics x="2256.56201171875" y="1317.8567599714202" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		</graphics>/>
+	</node>
+	<node cy:nodeid="223" id="760" label="NLP7">
+		<graphics x="2180.640066200455" y="2033.833740234375" z="0.0">
+		<att name="z" type="string" value="0.0"/>
+		<att name="lockedVisualProperties" type="list">/>
+		<att name="NODE_LABEL_FONT_SIZE" type="string" value="35"/>
+		</att>/>
+		</graphics>/>
+	</node>
+</graph>
