@@ -1,0 +1,108 @@
+FFL functions
+========================================================
+
+# Step Response Function
+
+```{r}
+step_response <- function(times,step) {
+  response <- ifelse( times < 0 , 0 , step )
+  return(response)
+}
+
+times = c(-0.5,0,0.5,1,1.5,2,2.5)
+step = 1
+
+steps = step_response(times,step)
+data = cbind.data.frame(times,steps)
+```
+
+## Entire Plot for step repsonse
+
+```{r fig.width=7, fig.height=6}
+plot(times,steps,type="s", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Sx")
+```
+
+
+
+```{r, engine='bash'}
+ffmpeg -framerate 10 -i %04dplot.png  -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p  movie.mp4
+```
+
+
+# Step response FFL Y
+## Yst = production / degrdation rates
+```{r}
+
+x  <- ifelse( times < 0 , 0 , -1 )
+
+Yst <- function(times,x_active) {
+  ## Y(t) = Yst(1-exp(-ay*t))
+  
+  y = x * (1- exp((-1 * times))) 
+  return(y)
+}
+
+
+times = c(-0.5,0,0.5,1,1.5,2,2.5)
+step = 1
+
+ysteps = Yst(times,x)
+```
+
+## Entire Plot for step repsonse
+
+```{r fig.width=7, fig.height=6}
+plot(times,ysteps,type="l", xlim= c(-0.5,2.5),xlab="time", ylab="Sx")
+```
+
+# Step response FFL Z
+## Yst = production / degrdation rates
+```{r}
+Zst <- function(times, y_levels) {
+  ## Z(t) = Zst(1-exp(-a*t))
+  y_active = ifelse( y_levels < 0.49 , 0 , 1 )
+  y = y_active * y_levels
+  z = y * (1- exp((-1 * times))) 
+  return(z)
+}
+
+zsteps = Zst(times,ysteps)
+```
+
+## Entire Plot for step repsonse
+
+```{r fig.width=7, fig.height=6}
+plot(times,zsteps,type="l", xlim= c(-0.5,2.5),xlab="time", ylab="Z")
+```
+
+
+
+```{r}
+setwd('~/Documents/R/FFL/images/')
+
+frames = 16
+times = seq(-0.5,2.5, by=.2)
+###shift_times = seq(-01.1,2, by=.2)
+
+for(i in 1:frames){
+ # creating a name for each plot file with leading zeros
+ if (i < 10) {name = paste('000',i,'plot.png',sep='')}
+
+ if (i < 100 && i >= 10) {name = paste('00',i,'plot.png', sep='')}
+ if (i >= 100) {name = paste('0', i,'plot.png', sep='')}
+ new_times = seq(-0.5,times[i], by=.2)
+ #shift_ntimes = seq(-01.1,shift_times[i], by=.2)
+ #length(shift_ntimes)
+ xsteps = step_response(new_times,1)
+ ysteps = Yst(new_times,xsteps)
+ zsteps = Zst(new_times,ysteps)
+ length(zsteps)
+ #saves the plot as a .png file in the working directory
+ png(name)
+ par(mfrow=c(3,1)) 
+ plot(new_times,xsteps,type="s", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Sx")
+ plot(new_times,ysteps,type="l", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Y")
+ plot(new_times,zsteps,type="l", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Z")
+ dev.off()
+}
+```
