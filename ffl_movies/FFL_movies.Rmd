@@ -1,4 +1,4 @@
-FFL functions
+Coherent FFL Type 1
 ========================================================
 
 # Step Response Function
@@ -96,6 +96,89 @@ for(i in 1:frames){
  xsteps = step_response(new_times,1)
  ysteps = Yst(new_times,xsteps)
  zsteps = Zst(new_times,ysteps)
+ length(zsteps)
+ #saves the plot as a .png file in the working directory
+ png(name)
+ par(mfrow=c(3,1)) 
+ plot(new_times,xsteps,type="s", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Sx")
+ plot(new_times,ysteps,type="l", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Y")
+ plot(new_times,zsteps,type="l", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Z")
+ dev.off()
+}
+```
+
+Coherent FFL type 1 OFF
+========================================================
+
+
+
+
+
+```{r, engine='bash'}
+ffmpeg -framerate 10 -i %04dplot.png  -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p  movie.mp4
+```
+
+
+# cherent type 1
+## Yst = production / degrdation rates
+```{r}
+times = c(-0.5,0,0.5,1,1.5,2,2.5)
+xon = ifelse( times < 0 , 0 , 1 )
+xoff  <- ifelse( times <= 0 , 1 , 0 )
+
+Yst <- function(times,x) {
+  ## Y(t) = Yst(1-exp(-ay*t))
+  y = x * (1- exp((-1 * times))) 
+  return(y)
+}
+y = Yst(times,xon)
+
+yneg= (y * -1) + 1
+```
+
+## Entire Plot for step repsonse
+
+```{r fig.width=7, fig.height=6}
+plot(times,ysteps,type="l", xlim= c(-0.5,2.5),xlab="time", ylab="Sx")
+```
+
+# Step response FFL Z
+## Yst = production / degrdation rates
+```{r}
+
+zx = y
+z = ifelse( y < 0.5 , y , yneg )
+```
+
+## Entire Plot for step repsonse
+
+```{r fig.width=7, fig.height=6}
+plot(times,z,type="l",xlab="time", ylab="Z")
+```
+
+
+
+```{r}
+setwd('~/Documents/R/FFL/images/I1')
+
+frames = 16
+times = seq(-0.5,2.5, by=.2)
+###shift_times = seq(-01.1,2, by=.2)
+
+for(i in 1:frames){
+ # creating a name for each plot file with leading zeros
+ if (i < 10) {name = paste('000',i,'plot.png',sep='')}
+
+ if (i < 100 && i >= 10) {name = paste('00',i,'plot.png', sep='')}
+ if (i >= 100) {name = paste('0', i,'plot.png', sep='')}
+ new_times = seq(-0.5,times[i], by=.2)
+ #shift_ntimes = seq(-01.1,shift_times[i], by=.2)
+ #length(shift_ntimes)
+ xsteps = step_response(new_times,1)
+ xsteps
+ ysteps = Yst(new_times,xsteps)
+ yneg = (ysteps * -1) + 1
+ zsteps = ifelse( ysteps < 0.5 , ysteps , yneg )
  length(zsteps)
  #saves the plot as a .png file in the working directory
  png(name)
