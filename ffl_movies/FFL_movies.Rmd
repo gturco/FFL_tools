@@ -112,7 +112,7 @@ for(i in 1:frames){
  abline(v = 0, col = "gray60", lwd = 5)
  plot(new_times,ysteps,type="l", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Y", lwd=5)
  abline(v = 0, col = "gray60", lwd = 5)
- abline( v = .50, h= .50, col = "gray60", lty = 3, lwd =5 )
+ abline( v = .50, h= .50, col = "red60", lty = 3, lwd =5 )
  plot(new_times,zsteps,type="l", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Z", lwd=5)
  abline(v = 0, col = "gray60", lwd = 5)
  abline( v = .50, col = "gray60", lty = 3, lwd =5 )
@@ -202,14 +202,14 @@ for(i in 1:frames){
  z = ifelse(times[i] <= .70 ,-100,.7)
  y = ifelse(times[i] <= .70 ,-100,.5)
  abline(v = x, col = "gray60", lwd = 4)
- abline( h = y, col = "gray60", lty = 3, lwd =5 )
+ abline( h = y, col = "#F97976", lty = 3, lwd =5 )
  plot(new_times,zsteps,type="l", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Z", lwd=5)
  abline(v = x, col = "gray60", lwd = 4)
- abline( v = z, col = "gray60", lty = 3, lwd =4 )
+ abline( v = z, col = "#F97976", lty = 3, lwd =4 )
  dev.off()
 }
 ```
 
 ```{r, engine='bash'}
-ffmpeg -framerate 10 -i %04dplot.png  -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p  movie.mp4
+ffmpeg -framerate 2 -i %04dplot.png  -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p  movie.mp4
 ```
