@@ -1,5 +1,9 @@
 Coherent FFL Type 1
 ========================================================
+#TODO
+1. Add line where cutoff is to graph
+2. Fix X axis
+3. Break up into parts
 
 # Step Response Function
 
@@ -38,7 +42,7 @@ x  <- ifelse( times < 0 , 0 , -1 )
 Yst <- function(times,x_active) {
   ## Y(t) = Yst(1-exp(-ay*t))
   
-  y = x * (1- exp((-1 * times))) 
+  y = x_active * (1- exp((-1 * times))) 
   return(y)
 }
 
@@ -46,13 +50,15 @@ Yst <- function(times,x_active) {
 times = c(-0.5,0,0.5,1,1.5,2,2.5)
 step = 1
 
-ysteps = Yst(times,x)
+ysteps = Yst(times,steps)
 ```
 
 ## Entire Plot for step repsonse
 
 ```{r fig.width=7, fig.height=6}
 plot(times,ysteps,type="l", xlim= c(-0.5,2.5),xlab="time", ylab="Sx")
+abline(h = 0, v = 0, col = "gray60")
+abline(h = .50, v = 0, col = "gray60", lty = 3)
 ```
 
 # Step response FFL Z
@@ -72,7 +78,9 @@ zsteps = Zst(times,ysteps)
 ## Entire Plot for step repsonse
 
 ```{r fig.width=7, fig.height=6}
-plot(times,zsteps,type="l", xlim= c(-0.5,2.5),xlab="time", ylab="Z")
+plot(times,zsteps,type="l", xlim= c(-0.5,2.5),xlab="time", ylab="Z", lwd= 5)
+abline(v = 0, col = "gray60", lwd = 5)
+abline( v = .50, col = "gray60", lty = 3, lwd =5 )
 ```
 
 
@@ -100,9 +108,14 @@ for(i in 1:frames){
  #saves the plot as a .png file in the working directory
  png(name)
  par(mfrow=c(3,1)) 
- plot(new_times,xsteps,type="s", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Sx")
- plot(new_times,ysteps,type="l", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Y")
- plot(new_times,zsteps,type="l", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Z")
+ plot(new_times,xsteps,type="s", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Sx", lwd= 5)
+ abline(v = 0, col = "gray60", lwd = 5)
+ plot(new_times,ysteps,type="l", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Y", lwd=5)
+ abline(v = 0, col = "gray60", lwd = 5)
+ abline( v = .50, h= .50, col = "gray60", lty = 3, lwd =5 )
+ plot(new_times,zsteps,type="l", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Z", lwd=5)
+ abline(v = 0, col = "gray60", lwd = 5)
+ abline( v = .50, col = "gray60", lty = 3, lwd =5 )
  dev.off()
 }
 ```
@@ -161,8 +174,8 @@ plot(times,z,type="l",xlab="time", ylab="Z")
 ```{r}
 setwd('~/Documents/R/FFL/images/I1')
 
-frames = 16
-times = seq(-0.5,2.5, by=.2)
+frames = 31
+times = seq(-0.5,2.5, by=.1)
 ###shift_times = seq(-01.1,2, by=.2)
 
 for(i in 1:frames){
@@ -171,7 +184,7 @@ for(i in 1:frames){
 
  if (i < 100 && i >= 10) {name = paste('00',i,'plot.png', sep='')}
  if (i >= 100) {name = paste('0', i,'plot.png', sep='')}
- new_times = seq(-0.5,times[i], by=.2)
+ new_times = seq(-0.5,times[i], by=.1)
  #shift_ntimes = seq(-01.1,shift_times[i], by=.2)
  #length(shift_ntimes)
  xsteps = step_response(new_times,1)
@@ -183,9 +196,20 @@ for(i in 1:frames){
  #saves the plot as a .png file in the working directory
  png(name)
  par(mfrow=c(3,1)) 
- plot(new_times,xsteps,type="s", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Sx")
- plot(new_times,ysteps,type="l", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Y")
- plot(new_times,zsteps,type="l", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Z")
+ plot(new_times,xsteps,type="s", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Sx", lwd= 5)
+ plot(new_times,ysteps,type="l", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Y", lwd=5)
+ x = ifelse(times[i] < 0 ,-100,0)
+ z = ifelse(times[i] <= .70 ,-100,.7)
+ y = ifelse(times[i] <= .70 ,-100,.5)
+ abline(v = x, col = "gray60", lwd = 4)
+ abline( h = y, col = "gray60", lty = 3, lwd =5 )
+ plot(new_times,zsteps,type="l", xlim= c(-0.5,2.5), ylim = c(0,1),xlab="time", ylab="Z", lwd=5)
+ abline(v = x, col = "gray60", lwd = 4)
+ abline( v = z, col = "gray60", lty = 3, lwd =4 )
  dev.off()
 }
+```
+
+```{r, engine='bash'}
+ffmpeg -framerate 10 -i %04dplot.png  -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p  movie.mp4
 ```
