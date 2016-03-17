@@ -1,0 +1,55 @@
+Input Functions
+========================================================
+
+X ----> Y 
+Input function : effect of TF on rate of transcription of target 
+Production rate Y per unit time: y=F(X*)
+
+the hill function- describes many real genes
+parameters = k,b,n
+
+* k = activation coefficient, units of concentation of active x needed to sig activate expression Kd=Koff/Kon
+* b = max expression level of the promoter when compleelty unbound how well does RNA poly bind and regulate expression
+* n = steepness of input function typically 1-4
+
+```{r}
+library(ggplot2)
+library("reshape")
+
+k = 1
+b = 10
+n = 1
+x_range = c(0:20) 
+
+activator <- function(k,b,n,x_range) {
+  ys <- list()
+  for(x in x_range) {
+      y <- (b*x^n)/(k^n+x^n)
+      ys <- c(ys,y)
+      }
+  return(ys)
+}
+
+
+repressor <- function(k,b,n,x_range){
+  ys <- list()
+  for(x in x_range) {
+    y = b/(1+((x/k)^n))
+    ys <- c(ys,y)
+  }
+  return(ys)
+}
+
+down_ys <- repressor(k,b,n,x_range)
+down_reg <- data.frame(x_range,down_ys)
+
+up_ys <- repressor(k,b,n,x_range)
+up_reg <- cbind(x_range,up_ys)
+colnames(up_reg) <- c("x","y")
+up_reg <- data.frame(up_reg)
+
+ggplot(up_reg, aes(x,y)) + geom_line()
+
+```
+
+
