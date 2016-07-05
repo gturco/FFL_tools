@@ -1,6 +1,11 @@
 import random as r
 from collections import defaultdict
 from scipy.stats import chisquare
+import numpy as np
+import scipy.stats as stats
+import pylab as pl
+
+
 
 #### def with input number of nodes for subgraph get all permutations [AB,BC], [CB,BC]
 ### then count the number of times this is seen in my network....
@@ -13,23 +18,29 @@ def get_network_info(network_info):
     tfs = []
     onetwork = defaultdict(list)
     enum = 0
+    interactions = set()
     for line in open(network_info):
         enum += 1
         args = line.strip().split(",")
         promoters.append(args[0])
         tfs.append(args[2])
+        interactions.update((args[2],args[0]))
+        ## prevent dups
+        if (args[2],args[0]) in interactions: continue
         onetwork[args[2]].append(args[0])
 
     return set(promoters), set(tfs), onetwork, enum
 
-def build_random_network(promoters, tfs, edge_number):
+def build_random_network(promoters, tfs, edge_number,network):
     promoters = list(promoters)
     tfs = list(tfs)
     rnetwork =defaultdict(list)
-    for edge in range(0,edge_number + 1):
-        tf = r.choice(tfs)
-        p = r.choice(promoters)
-        rnetwork[tf].append(p)
+    #for edge in range(0,edge_number + 1):
+    for tf in tfs:
+        for p in range(0,len(network[tf])):
+            #tf = r.choice(tfs+ promoters)
+            p = r.choice(promoters+tfs)
+            rnetwork[tf].append(p)
     return rnetwork
 
 
@@ -66,13 +77,48 @@ def get_FFLs(network):
                         FFL.append(X)
     return len(FFL), sum(three_combos)
 
-def main(network_file):
-    promoters, tfs, onetwork, edge_number = get_network_info(network_file)
-    rnetwork =  build_random_network(promoters, tfs, edge_number)
-    network_ffl, network_threes = get_FFLs(onetwork)
+def gen_random_flls(promoters,tfs,edge_number, network):
+    rnetwork =  build_random_network(promoters, tfs, edge_number, network)
     random_ffl, random_threes = get_FFLs(rnetwork)
-    print network_ffl, network_threes, random_ffl, random_threes
-    test_stat, pval = chisquare([network_ffl, network_threes], f_exp=[random_ffl, random_threes])
-    print pval, len(onetwork.keys()), len(rnetwork.keys())
+    return random_ffl
+
+def graph_indegree(network):
+    connections = []
+    for node in network:
+         connections.append(len(network[node]))
+    h = sorted(connections)
+    fit = stats.norm.pdf(h, np.mean(h), np.std(h))
+    print np.std(h)
+    pl.plot(h,fit,'-o')
+    pl.hist(h,normed=True)      #use this to draw histogram of your data
+    pl.show()    
+
+def main(network_file, iterations):
+    ### erdos_renyi network has same number of nodes and edges
+    ### directed edges are not assigned at random because of the diffrence in experimental design
+    promoters, tfs, onetwork, edge_number = get_network_info(network_file)
+    ###graph_indegree(onetwork)
+    network_ffl, network_threes = get_FFLs(onetwork)
+    all_flls = []
+    for i in range(0,iterations):
+        random_ffl = gen_random_flls(promoters, tfs, edge_number,onetwork)
+        all_flls.append(random_ffl)
+    print sum(all_flls)
+    h = sorted(all_flls)
+    fit = stats.norm.pdf(h, np.mean(h), np.std(h))
+    print np.std(h)
+    pl.plot(h,fit,'-o')
+    pl.hist(h,normed=True)      #use this to draw histogram of your data
+    pl.show()                   #use may also need add this 
+    ##return network_threes
+    #print network_ffl, network_threes, random_ffl, random_threes
+    #test_stat, pval = chisquare([network_ffl, network_threes], f_exp=[random_ffl, random_threes])
+    #print pval, len(onetwork.keys()), len(rnetwork.keys())
     ## pretty close to being same number
-main("xylem_only_network_03_14_13.csv")
+
+
+
+
+
+main("xylem_only_network_03_14_13.csv",1000)
+### zscore of 12
