@@ -1,0 +1,16 @@
+position,gene,element
+AT3G08500
+4
+8
+AT5G12870
+8
+8
+AT5G03260
+4
+3
+AT4G18780
+6
+1
+AT5G67210
+5
+4

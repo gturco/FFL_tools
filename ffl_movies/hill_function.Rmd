@@ -52,4 +52,15 @@ ggplot(up_reg, aes(x,y)) + geom_line()
 
 ```
 
+#### eq 3
 
+y = 1
+k= 10
+x=.1
+p=100
+a=1
+ay^-1 + apk^-2x^2y^-2-bx
+
+a*y^-1 = 1 - this is the dominate term for the equation...
+a*p*k^-2*x^2*y^-2 = 0.01
+-b*x =
